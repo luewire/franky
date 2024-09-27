@@ -2,25 +2,25 @@ const btnTombol = document.querySelector("#tombol");
 const txtUsername = document.querySelector("#Username");
 const txtPassword = document.querySelector("#password");
 
-// Create a list of users with their credentials
+// List of users
 const users = [
     {
+        username: "User01",
+        password: "123",
         name: "Zen",
-        email: "zen@gmail.com",
-        username: "zen",
-        password: "123"
+        email: "zen@gmail.com"
     },
     {
+        username: "User02",
+        password: "abc",
         name: "Deka",
-        email: "Deka@mail.com",
-        username: "deka",
-        password: "123"
+        email: "deka@gmail.com"
     },
     {
+        username: "User03",
+        password: "456",
         name: "Titian",
-        email: "titian@mail.com",
-        username: "titian",
-        password: "123"
+        email: "titian@gmail.com"
     }
 ];
 
@@ -29,18 +29,22 @@ btnTombol.addEventListener("click", function () {
     const inputUsername = txtUsername.value;
     const inputPassword = txtPassword.value;
 
-    // Check if the username and password match any user in the list
+    // Find the user with the matching username and password
     const user = users.find(user => user.username === inputUsername && user.password === inputPassword);
 
     if (user) {
         // Store the user data in localStorage and set isLoggedIn to true
-        localStorage.setItem("userData", JSON.stringify({ name: user.name, email: user.email }));
+        const userData = {
+            name: user.name,
+            email: user.email
+        };
+        localStorage.setItem("userData", JSON.stringify(userData));
         localStorage.setItem("isLoggedIn", "true");
 
         // Redirect to the landing page
         window.location.href = "landingpage.html";
     } else {
-        // Alert if the username or password is incorrect
+        // Show an alert if username or password is incorrect
         alert("Username dan password anda salah. Silakan dicek kembali!!!");
     }
 });
