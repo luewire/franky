@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/stlye.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar d-flex align-items-center justify-content-center py-4 position-relative">
+            <h1><a href="landingpage.html"><img src="/franky/assets/images/blonded-logo.png" alt="Logo" id="logo" ></a></h1>
+
+            <div class="position-absolute end-0">
+                <a href="#modal-cart" class="text-decoration-none text-white position-relative" id="btn-cart">
+                    <img src="assets/images/icons/shopping-bag 1.png" alt="" class="img-fluid">
+                    <!-- Badge untuk jumlah item -->
+                    <span class="badge badge-pill badge-danger position-absolute top-10 end-0" id="cart-badge"
+                        style="background-color: red; color: white; font-size: 10px; font-weight: bold;">
+                        0
+                    </span>
+                </a>
+
+
+                <a href="#modal-user" data-bs-toggle="modal" class="text-decoration-none text-white">
+                    <img src="assets/images/icons/user.png" alt="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="a"
+                        role="tab" aria-controls="all-tab-pane" aria-selected="true">All</a>
+                </li>
+
+                <li class="nav-item" role="presentation"></li>
+                <a class="nav-link " id="album-tab" data-bs-toggle="tab" data-bs-target="#album-tab-pane" type="a"
+                    role="tab" aria-controls="album-tab-pane" aria-selected="true">Album</a>
+                </li>
+
+                <li class="nav-item" role="presentation"></li>
+                <a class="nav-link " id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo-tab-pane" type="a"
+                    role="tab" aria-controls="photo-tab-pane" aria-selected="true">Photo</a>
+                </li>
+
+                <li class="nav-item" role="presentation"></li>
+                <a class="nav-link " id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="a"
+                    role="tab" aria-controls="video-tab-pane" aria-selected="true">Video</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-5" id="myTabContent">
+                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-4 mb-5" data-product-id="1" data-product-name="product-1"
+                            data-product-price="500000" data-product-image="assets/images/image 1.png">
+                            <div class="d-flex flex-column align-items-center">
+                                <img  src="assets/images/image 1.png" alt="">
+
+                                <p class="text-center text-white mt-3 fz-12 w-75">
+                                    BLONDE2 Record Gatefold Packaging 12" x 36" Lyrics foldout 12" x 24" Foldout
+                                    poster Please allow 4-8 weeks for fulfillment.
+                                </p>
+
+                                <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5" data-product-id="2" data-product-name="product-2"
+                            data-product-price="500000" data-product-image="assets/images/image 2.png">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 2.png" alt="">
+
+                                <p class="text-center text-white mt-3 fz-12 w-75">
+                                    BRAZIL RINGER LOGO T-SHIRT REGULAR FIT CREWNECK TEE 100% RECYCLED COTTON MADE IN USA
+                                </p>
+
+                                <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 3.png" alt="">
+
+                                <p class="text-center text-white mt-3 fz-12 w-75">
+                                    BLONDED JACQUARD SOCCER SHORTS | NAVY
+                                    100% POLYESTER
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 4.png" alt="">
+
+                                <p class="text-center text-white mt-3 fz-12 w-75">
+                                    CAYENDO FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 6.png" alt="">
+
+                                <p class="text-center text-white mt-3 fz-12 w-75">
+                                    BLOND FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 9.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/image 10.png" alt="" class="me-5">
+
+                                <img src="assets/images/image 8.png" alt="" class="mt-5">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="album-tab-pane" role="tabpanel" aria-labelledby="album-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <a href="album/blonde.html" class="text-decoration-none">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="assets/images/albums/image 7.png" alt="">
+
+                                    <p class="text-center text-white mt-3 fz-12 w-75">
+                                        BLOND FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="album/endless.html" class="text-decoration-none">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="assets/images/albums/image 8 (1).png" alt="">
+
+                                    <p class="text-center text-white mt-3 fz-12 w-75">
+                                        BLOND FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <a href="album/orange.html" class="text-decoration-none">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="assets/images/albums/image 9 (1).png" alt="">
+
+                                    <p class="text-center text-white mt-3 fz-12 w-75">
+                                        BLOND FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <a href="album/cayendo.html" class="text-decoration-none">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="assets/images/albums/image 4 (1).png" alt="">
+
+                                    <p class="text-center text-white mt-3 fz-12 w-75">
+                                        BLOND FRANK OCEAN A SIDE ACUSTIC ALL RIGHTS RESERVED, COPYRIGHT 2019
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="photo-tab-pane" role="tabpanel" aria-labelledby="photo-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/photos/image 7 (1).png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/photos/image 8 (2).png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/photos/image 9 (2).png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="assets/images/photos/image 10 (1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+                    <div class="row ">
+                        <div class="col-md-12 mb-5">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="d-flex flex-column align-items-center justify-content-center py-5 gap-4">
+            <div class="link-group d-flex align-items-center justify-content-center gap-5">
+                <h6 class="m-0">
+                    <a href="terms.html" class="text-decoration-none text-white">Terms</a>
+                </h6>
+                <h6 class="m-0">
+                    <a href="privacy.html" class="text-decoration-none text-white">Privacy</a>
+                </h6>
+                <h6 class="m-0">
+                    <a href="help.html" class="text-decoration-none text-white">Help</a>
+                </h6>
+            </div>
+            <h6 class="m-0">
+                <a href="about.html" class="text-decoration-none text-white">About Blonded</a>
+            </h6>
+        </footer>  
+    </div>
+
+ <!-- modal user -->
+<div class="modal fade" id="modal-user" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: #D9D9D9;">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">My Profile</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h2>Profile</h2>
+        <p id="profile-message"></p> <!-- Updated id to show message -->
+        <a id="login-link" href="index.html" style="display:none;">Go to login page</a> <!-- Link to login -->
+
+        <script>
+            // Check login status
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+            if (isLoggedIn === "true") {
+                // Fetch user data
+                const userData = JSON.parse(localStorage.getItem("userData"));
+                if (userData) {
+                    document.getElementById("profile-message").innerHTML = `
+                        Name: ${userData.name} <br>
+                        Email: ${userData.email}
+                    `;
+                }
+            } else {
+                // Show not logged in message and link to login page
+                document.getElementById("profile-message").textContent = "You are not logged in now.";
+                document.getElementById("login-link").style.display = "block"; // Show login link
+            }
+        </script>
+    </div>
+</div>
+</div>
+
+
+    <!-- modal cart -->
+    <div class="side-cart" id="side-cart">
+        <div class="side-cart-header">
+            <div class="d-flex align-items-center justify-content-between">
+                <h6 class="m-0">
+                    My Cart
+                </h6>
+                <div>
+                    <button type="button" class="btn-close" id="side-cart-close"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="side-cart-body mt-3">
+            <div id="cart-items"></div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <h6 class="m-0">
+                    Total
+                </h6>
+                <h6 class="m-0" id="total-price">
+                    Rp 0
+                </h6>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

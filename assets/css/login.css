@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/franky/assets/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.login-container {
+    background-color: #140F0F;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-container #logo {
+    width: 128px; 
+    opacity: 0.9;
+    margin-bottom: 27px; 
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #B2ABAA;
+    color: #333;
+}
+
+.login-container input[type="submit"] {
+    width: 86%; 
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #30150B;
+    color: #B2ABAA;
+    cursor: pointer;
+} 
+
+#continue-link {
+    color: #666; /* Change the text color */
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Add underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#continue-link:hover {
+    color: #f1f1f1; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
