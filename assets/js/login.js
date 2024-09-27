@@ -5,20 +5,20 @@ const txtPassword = document.querySelector("#password");
 // List of users
 const users = [
     {
-        username: "User01",
+        username: "01",
         password: "123",
         name: "Zen",
         email: "zen@gmail.com"
     },
     {
-        username: "User02",
-        password: "abc",
+        username: "02",
+        password: "123",
         name: "Deka",
         email: "deka@gmail.com"
     },
     {
-        username: "User03",
-        password: "456",
+        username: "03",
+        password: "123",
         name: "Titian",
         email: "titian@gmail.com"
     }
