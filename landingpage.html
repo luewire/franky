@@ -109,7 +109,10 @@
 
                         <div class="col-md-4 mb-5">
                             <div class="d-flex flex-column align-items-center">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mXiFHDfvn4A?si=nFeBvb1P3jfMGQ3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
 
@@ -192,7 +195,10 @@
 
                         <div class="col-md-4 mb-5">
                             <div class="d-flex flex-column align-items-center">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mXiFHDfvn4A?si=nFeBvb1P3jfMGQ3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
 
@@ -230,7 +236,10 @@
                 <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
                     <div class="row ">
                         <div class="col-md-12 mb-5">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mXiFHDfvn4A?si=nFeBvb1P3jfMGQ3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
 
                     </div>
@@ -270,26 +279,40 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <h2>Profile</h2>
         <p id="profile-message"></p> <!-- Updated id to show message -->
         <a id="login-link" href="index.html" style="display:none;">Go to login page</a> <!-- Link to login -->
+        <button id="logout-btn" class="btn btn-danger mt-3">Logout</button>
 
         <script>
             // Check login status
             const isLoggedIn = localStorage.getItem("isLoggedIn");
-
+        
             if (isLoggedIn === "true") {
                 // Fetch user data
                 const userData = JSON.parse(localStorage.getItem("userData"));
                 if (userData) {
                     document.getElementById("profile-message").innerHTML = `
-                        Name: ${userData.name} <br>
+                        Name: ${userData.name}<br>
                         Email: ${userData.email}
                     `;
                 }
+        
+                // Show logout button
+                document.getElementById("logout-btn").style.display = "block";
             } else {
-                // Show not logged in message and link to login page
-                document.getElementById("profile-message").textContent = "You are not logged in now.";
-                document.getElementById("login-link").style.display = "block"; // Show login link
+                // If not logged in, hide logout button and show login link
+                document.getElementById("login-link").style.display = "block";
             }
+        
+            // Logout function
+            document.getElementById("logout-btn").addEventListener("click", function() {
+                // Remove login data from localStorage
+                localStorage.removeItem("isLoggedIn");
+                localStorage.removeItem("userData");
+        
+                // Redirect to login page
+                window.location.href = "index.html";
+            });
         </script>
+        
     </div>
 </div>
 </div>
